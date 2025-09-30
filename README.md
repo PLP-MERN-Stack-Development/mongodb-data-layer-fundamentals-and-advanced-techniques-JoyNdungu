@@ -1,59 +1,45 @@
-# MongoDB Fundamentals - Week 1
+# MongoDB Assignment - Week 1
 
-## Setup Instructions
+This repository contains my submission for the MongoDB Data Layer Fundamentals assignment.  
+It demonstrates basic database setup, document insertion, queries, and viewing collections in MongoDB Compass.
 
-Before you begin this assignment, please make sure you have the following installed:
+---
 
-1. **MongoDB Community Edition** - [Installation Guide](https://www.mongodb.com/docs/manual/administration/install-community/)
-2. **MongoDB Shell (mongosh)** - This is included with MongoDB Community Edition
-3. **Node.js** - [Download here](https://nodejs.org/)
+## 📂 Files in this Repository
 
-### Node.js Package Setup
+- **insert_books.js** → Script to populate the database with sample book documents.
+- **queries.js** → Script containing queries to retrieve and update documents.
+- **screenshot.png** → Screenshot from MongoDB Compass showing the `books` collection.
 
-Once you have Node.js installed, run the following commands in your assignment directory:
+---
 
-```bash
-# Initialize a package.json file
-npm init -y
+## ⚙️ How to Run the Scripts
 
-# Install the MongoDB Node.js driver
-npm install mongodb
-```
+1. Ensure MongoDB is installed and running locally on your system.
+2. Clone this repository:
+   ```bash
+   git clone <your-repo-link>
+   cd <repo-name>
+   Run the insert script to populate the database:
+   ```
 
-## Assignment Overview
+bash
+Copy code
+mongo < insert_books.js
+Run the queries script:
 
-This week focuses on MongoDB fundamentals including:
-- Creating and connecting to MongoDB databases
-- CRUD operations (Create, Read, Update, Delete)
-- MongoDB queries and filters
-- Aggregation pipelines
-- Indexing for performance
+bash
+Copy code
+mongo < queries.js
+🖥️ MongoDB Compass
+Open MongoDB Compass and connect using:
 
-## Submission
+arduino
+Copy code
+mongodb://localhost:27017
+Database: library
 
-Complete all the exercises in this assignment and push your code to GitHub using the provided GitHub Classroom link.
+Collection: books
 
-## Getting Started
-
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install MongoDB locally or set up a MongoDB Atlas account
-4. Run the provided `insert_books.js` script to populate your database
-5. Complete the tasks in the assignment document
-
-## Files Included
-
-- `Week1-Assignment.md`: Detailed assignment instructions
-- `insert_books.js`: Script to populate your MongoDB database with sample book data
-
-## Requirements
-
-- Node.js (v18 or higher)
-- MongoDB (local installation or Atlas account)
-- MongoDB Shell (mongosh) or MongoDB Compass
-
-## Resources
-
-- [MongoDB Documentation](https://docs.mongodb.com/)
-- [MongoDB University](https://university.mongodb.com/)
-- [MongoDB Node.js Driver](https://mongodb.github.io/node-mongodb-native/) 
+Screenshot:
+![alt text](image.png)
